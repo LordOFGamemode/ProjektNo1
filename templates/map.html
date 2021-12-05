@@ -1,0 +1,2939 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       .room {
+    height: 60%;
+    width: 60%;
+      }
+
+      html, body {
+         height: 100%;
+         width: 100%;
+         margin: 0;
+         overflow: hidden;
+      }
+
+      .cont {
+         height: 100%;
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      #backbutton {
+         position: absolute;
+         top: 4px;
+         left: 4px;
+      }
+
+
+      body rect {
+         fill: rgba(240, 248, 255, 0)!important;
+         stroke: black;
+      }
+
+      body path {
+         fill: rgba(240, 248, 255, 0)!important;
+         stroke: black;
+      }
+
+
+      body rect:hover {
+         stroke: Blue;
+      }
+
+      body path:hover {
+         stroke: Blue;
+      }
+
+      .green {
+         fill:green !important;
+      }
+
+      .red {
+         fill:red !important;
+      }
+
+
+    </style>
+    <title>Map</title>
+</head>
+<body>
+    <button onClick="makevisible('all')">Back</button>
+    <input type="radio" name="votetype" id="votetype1">Sicher
+    <input type="radio" name="votetype" id="votetype2">Unsicher
+    <input type="radio" name="votetype" id="votetype3">Kein Plan
+    <button onClick="redirect()" >Abstimmen</button>
+
+   <div class="cont">
+
+      <div id="testroom" class="room">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+         <!-- Created with Inkscape (http://www.inkscape.org/) -->
+         
+         <svg
+            version="1.1"
+            id="svg31"
+            width="100%"
+            height="100%"
+            viewBox="0 0 100% 100%"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+            <defs
+               id="defs35" />
+            <g
+               id="g37">
+               <rect
+                  style="fill:#0000ff;fill-rule:evenodd"
+                  id="rect63"
+                  width="58.561188"
+                  height="62.922127"
+                  x="24.919655"
+                  y="8.0988874" 
+                  onclick="makevisible('all')"
+               />
+               <rect
+                  style="fill:#0000ff;fill-rule:evenodd"
+                  id="rect65"
+                  width="35.925835"
+                  height="37.794807"
+                  x="46.309025"
+                  y="74.135971"
+                  ry="0" />
+               <rect
+                  style="fill:#0000ff;fill-rule:evenodd"
+                  id="rect67"
+                  width="59.184177"
+                  height="35.302841"
+                  x="23.673672"
+                  y="114.42274" />
+               <rect
+                  style="fill:#0000ff;fill-rule:evenodd"
+                  id="rect69"
+                  width="97.809639"
+                  height="77.873917"
+                  x="83.480843"
+                  y="8.0988874" />
+               <rect
+                  style="fill:#0000ff;fill-rule:evenodd"
+                  id="rect71"
+                  width="52.538937"
+                  height="62.299133"
+                  x="129.78987"
+                  y="87.011124" />
+               <rect
+                  style="fill:#0000ff;fill-rule:evenodd"
+                  id="rect73"
+                  width="43.817066"
+                  height="60.014832"
+                  x="85.972809"
+                  y="89.295425" />
+               <rect
+                  style="fill:#0000ff;fill-rule:evenodd"
+                  id="rect75"
+                  width="29.280596"
+                  height="47.555012"
+                  x="185.44376"
+                  y="7.8912234" />
+               <rect
+                  style="fill:#0000ff;fill-rule:evenodd"
+                  id="rect80"
+                  width="55.446228"
+                  height="64.583435"
+                  x="219.50063"
+                  y="10.590853" />
+               <rect
+                  style="fill:#0000ff;fill-rule:evenodd"
+                  id="rect82"
+                  width="58.145859"
+                  height="57.315205"
+                  x="217.63164"
+                  y="91.787392" />
+               <rect
+                  style="fill:#0000ff;fill-rule:evenodd"
+                  id="rect84"
+                  width="28.449938"
+                  height="31.772558"
+                  x="184.6131"
+                  y="115.87639" />
+            </g>
+         </svg>
+      </div>
+      <div id="all" class="room">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+         <!-- Created with Inkscape (http://www.inkscape.org/) -->
+         
+         <svg
+            version="1.1"
+            id="svg9"
+            xml:space="preserve"
+            width="100%"
+            height=100%"
+            viewBox="0 0 526.28321 483.89842"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"><defs
+              id="defs13" /><g
+              id="g15"
+              transform="matrix(1.3333333,0,0,-1.3333333,-98.688047,1047.864)"><g
+                id="g17"
+                transform="scale(595.44,841.68)" /><path
+                id="rect123"
+                style="fill:#e3f4d7;stroke-width:1"
+                d="M 419.86523,74.802734 V 193.04102 H 431.125 v 18.25976 h 82.26562 v -18.25976 h 23.10352 V 74.802734 Z"
+                transform="matrix(0.75000002,0,0,-0.75000002,0,842.00005)"
+                onclick="makevisible('hauptgebäude')"
+                /><path
+                id="rect149"
+                style="fill:#00ffff;stroke-width:1"
+                d="m 559.41797,109.79297 v 27.34765 h -22.52149 v 16.48829 h 22.52149 v 28.95507 h 55.09765 v -72.79101 z"
+                transform="matrix(0.75000002,0,0,-0.75000002,0,842.00005)"
+                onclick="makevisible('anbau')"
+                /><rect
+                style="fill:#ff00ff;stroke-width:0.75"
+                id="rect175"
+                width="48.561958"
+                height="87.170219"
+                x="305.84985"
+                y="-683.64587"
+                transform="scale(1,-1)"
+                onclick="makevisible('mitteltrackt')"
+                /><rect
+                style="fill:#808000;stroke-width:0.75"
+                id="rect177"
+                width="59.252625"
+                height="98.330444"
+                x="409.47583"
+                y="-683.64587"
+                transform="scale(1,-1)"
+                onclick="makevisible('verwaltung')"
+                /><rect
+                style="fill:#008000;stroke-width:0.75"
+                id="rect201"
+                width="59.420517"
+                height="88.890831"
+                x="193.04134"
+                y="-683.5567"
+                transform="scale(1,-1)" 
+                onclick="makevisible('nawi')"
+                /><rect
+                style="fill:#ff0000;stroke-width:0.75"
+                id="rect225"
+                width="54.183887"
+                height="8.420207"
+                x="252.46184"
+                y="-683.64587"
+                transform="scale(1,-1)" /><rect
+                style="fill:#0000ff;stroke-width:0.75"
+                id="rect274"
+                width="55.859898"
+                height="10.370551"
+                x="354.4118"
+                y="-683.64587"
+                transform="scale(1,-1)" /><rect
+                style="fill:#d35f5f;stroke-width:0.75"
+                id="rect320"
+                width="100.67773"
+                height="89.933472"
+                x="74.016037"
+                y="-571.0058"
+                transform="scale(1,-1)" 
+                onclick="makevisible('sporthalle')"
+                /><path
+                id="rect344"
+                style="fill:#6c5353;stroke-width:1"
+                d="m 340.63281,353.36719 v 34.48828 h 25.99805 v 22.2832 h -28.65039 v 31.30469 h 25.99805 v 12.73437 h 94.44336 v -12.73437 h 21.7539 v -31.30469 h -21.22266 v -22.2832 h 24.9375 v -34.48828 z"
+                transform="matrix(0.75000002,0,0,-0.75000002,0,842.00005)" 
+                onclick="makevisible('zentral')"
+                /><path
+                id="rect374"
+                style="fill:#ff6600;stroke-width:1"
+                d="m 536.94727,363.97852 v 96.5664 62.60742 23.34571 h 30.77343 v -23.34571 h 37.14063 v -62.60742 h 12.20508 v -96.5664 z"
+                transform="matrix(0.75000002,0,0,-0.75000002,0,842.00005)"
+                onclick="makevisible('KuBiz')"
+                /><path
+                id="rect427"
+                style="fill:#d4aa00;stroke-width:1"
+                d="m 301.90039,481.76758 v 10.61133 46.16015 h 20.69336 v 20.16211 h 139.54297 v -20.16211 h 23.3457 v -46.16015 -9.55079 h -30.24414 v 9.55079 h -125.2168 v -10.61133 z"
+                transform="matrix(0.75000002,0,0,-0.75000002,0,842.00005)" /></g></svg>
+
+      </div>
+      <div id="hauptgebäude" class="room">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+         <!-- Created with Inkscape (http://www.inkscape.org/) -->
+         
+         <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 123.08499 115.5481"
+            version="1.1"
+            id="svg51"
+            inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+            sodipodi:docname="pläne hapt2.1.svg"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+           <sodipodi:namedview
+              id="namedview53"
+              pagecolor="#ffffff"
+              bordercolor="#666666"
+              borderopacity="1.0"
+              inkscape:pageshadow="2"
+              inkscape:pageopacity="0.0"
+              inkscape:pagecheckerboard="0"
+              inkscape:document-units="mm"
+              showgrid="false"
+              fit-margin-top="0"
+              fit-margin-left="0"
+              fit-margin-right="0"
+              fit-margin-bottom="0"
+              inkscape:zoom="0.64052329"
+              inkscape:cx="213.10701"
+              inkscape:cy="183.44376"
+              inkscape:window-width="1920"
+              inkscape:window-height="1137"
+              inkscape:window-x="1358"
+              inkscape:window-y="-8"
+              inkscape:window-maximized="1"
+              inkscape:current-layer="layer1" />
+           <defs
+              id="defs48">
+             <rect
+                x="17.173458"
+                y="345.03039"
+                width="62.448939"
+                height="29.663246"
+                id="rect28456" />
+           </defs>
+           <g
+              inkscape:label="Ebene 1"
+              inkscape:groupmode="layer"
+              id="layer1"
+              transform="translate(-48.748184,-100.0201)">
+             <rect
+                style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.413593"
+                id="HU1"
+                width="24.384192"
+                height="10.728112"
+                x="48.748184"
+                y="100.0201" 
+                onclick="vote('HU1')"
+                />
+             <rect
+                style="fill:#00ff00;fill-rule:evenodd;stroke-width:0.413593"
+                id="HU2"
+                width="24.359766"
+                height="9.336585"
+                x="48.748184"
+                y="110.74823"
+                onclick="vote('HU2')"
+                />
+             <rect
+                style="fill:#ff00ff;fill-rule:evenodd;stroke-width:0.413593"
+                id="HU3"
+                width="24.807274"
+                height="38.909374"
+                x="73.132378"
+                y="100.0201" 
+                onclick="vote('HU3')"
+                />
+             <rect
+                style="fill:#a02c2c;fill-rule:evenodd;stroke-width:0.413593"
+                id="HU4"
+                width="22.686556"
+                height="39.050415"
+                x="97.939651"
+                y="100.0201" 
+                onclick="vote('HU4')"
+                />
+             <rect
+                style="fill:#803300;fill-rule:evenodd;stroke-width:0.413593"
+                id="HU5"
+                width="22.899921"
+                height="20.866215"
+                x="120.60346"
+                y="100.0201" 
+                onclick="vote('HU5')"
+                />
+             <rect
+                style="fill:#d38d5f;fill-rule:evenodd;stroke-width:0.413593"
+                id="HU6"
+                width="26.205084"
+                height="26.326647"
+                x="143.50337"
+                y="100.0201" 
+                onclick="vote('HU6')"
+                />
+             <rect
+                style="fill:#de8787;stroke-width:0.413593"
+                id="HU7"
+                width="24.224527"
+                height="37.503696"
+                x="48.748184"
+                y="119.94374" 
+                onclick="vote('HU7')"
+                />
+             <rect
+                style="fill:#f4d7d7;stroke-width:0.413593"
+                id="HU8"
+                width="24.224527"
+                height="20.892113"
+                x="48.748184"
+                y="157.44743" 
+                onclick="vote('HU8')"
+                />
+             <rect
+                style="fill:#782144;stroke-width:0.413593"
+                id="HU9"
+                width="24.224529"
+                height="37.228649"
+                x="48.748184"
+                y="178.33955" 
+                onclick="vote('HU9')"
+                />
+             <path
+                id="HU10"
+                style="fill:#aa0088;stroke-width:0.413594"
+                d="m 86.843691,183.56246 v 30.62603 H 117.062 v -0.23719 h 17.70641 V 197.09496 H 117.062 v -13.5325 z" 
+                onclick="vote('HU10')"
+                />
+             <rect
+                style="fill:#916f7c;stroke-width:0.413593"
+                id="HU11"
+                width="17.706129"
+                height="13.532383"
+                x="117.06225"
+                y="183.56256" 
+                onclick="vote('HU11')"
+                />
+             <rect
+                style="fill:#241c22;stroke-width:0.413593"
+                id="HU12"
+                width="33.287506"
+                height="12.345312"
+                x="81.413948"
+                y="138.92947" 
+                onclick="vote('HU12')"
+                />
+             <rect
+                style="fill:#442178;stroke-width:0.413593"
+                id="HU13"
+                width="17.942221"
+                height="23.978407"
+                x="120.60346"
+                y="120.88632" 
+                onclick="vote('HU13')"
+                />
+             <rect
+                style="fill:#cd87de;stroke-width:0.413593"
+                id="HU14"
+                width="17.706141"
+                height="7.5971088"
+                x="120.60346"
+                y="144.86475" 
+                onclick="vote('HU14')"
+                />
+             <rect
+                style="fill:#7c6f91;stroke-width:0.413593"
+                id="HU15"
+                width="26.441164"
+                height="30.388466"
+                x="143.50337"
+                y="126.34677" 
+                onclick="vote('HU15')"
+                />
+             <rect
+                style="fill:#ff0066;stroke-width:0.413593"
+                id="HU16"
+                width="24.788568"
+                height="10.920861"
+                x="146.80852"
+                y="174.06615" 
+                onclick="vote('HU16')"
+                />
+             <rect
+                style="fill:#ffaacc;stroke-width:0.413593"
+                id="HU17"
+                width="25.024662"
+                height="29.201445"
+                x="146.80852"
+                y="184.98701"
+                ry="6.2869293e-14" 
+                onclick="vote('HU17')"
+                />
+             <rect
+                style="fill:#dedbe3;stroke-width:0.413593"
+                id="Treppe"
+                width="30.454527"
+                height="20.892082"
+                x="94.634506"
+                y="159.82155"
+                ry="6.2869103e-14"
+                onclick="makevisible('hauptoben')"
+                />
+             <text
+                xml:space="preserve"
+                transform="matrix(0.26458333,0,0,0.26458333,48.748184,100.0201)"
+                id="text28454"
+                style="font-size:14.6667px;line-height:1.9;font-family:sans-serif;white-space:pre;shape-inside:url(#rect28456)"><tspan
+                  x="17.173828"
+                  y="363.1788"
+                  id="tspan37813">Kunst 1</tspan></text>
+
+      </div>
+      <div id="anbau" class="room">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+         <!-- Created with Inkscape (http://www.inkscape.org/) -->
+         
+         <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 55.166786 61.464333"
+            version="1.1"
+            id="svg14"
+            inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+            sodipodi:docname="pläne anbau.svg"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+           <sodipodi:namedview
+              id="namedview16"
+              pagecolor="#ffffff"
+              bordercolor="#666666"
+              borderopacity="1.0"
+              inkscape:pageshadow="2"
+              inkscape:pageopacity="0.0"
+              inkscape:pagecheckerboard="0"
+              inkscape:document-units="mm"
+              showgrid="false"
+              fit-margin-top="0"
+              fit-margin-left="0"
+              fit-margin-right="0"
+              fit-margin-bottom="0"
+              inkscape:zoom="0.64052329"
+              inkscape:cx="-370.79058"
+              inkscape:cy="92.892797"
+              inkscape:window-width="1920"
+              inkscape:window-height="1137"
+              inkscape:window-x="1358"
+              inkscape:window-y="-8"
+              inkscape:window-maximized="1"
+              inkscape:current-layer="layer1" />
+           <defs
+              id="defs11" />
+           <g
+              inkscape:label="Ebene 1"
+              inkscape:groupmode="layer"
+              id="layer1"
+              transform="translate(-79.815773,-123.7574)">
+             <rect
+                style="fill:#ff00ff;stroke-width:0.264583"
+                id="AU1"
+                width="26.449827"
+                height="27.205517"
+                x="79.815773"
+                y="123.7574" 
+                onclick="vote('AU1')"
+                />
+             <rect
+                style="fill:#550000;stroke-width:0.264583"
+                id="AU2"
+                width="27.205536"
+                height="24.686499"
+                x="79.815773"
+                y="160.53523" 
+                onclick="vote('AU2')"
+                />
+             <rect
+                style="fill:#de8787;stroke-width:0.264583"
+                id="AU3"
+                width="27.961258"
+                height="24.686499"
+                x="107.0213"
+                y="160.53523" 
+                onclick="vote('AU3')"
+                />
+             <rect
+                style="fill:#ff6600;stroke-width:0.264583"
+                id="AU4"
+                width="28.716948"
+                height="27.205517"
+                x="106.26559"
+                y="123.7574" 
+                onclick="vote('AU4')"
+                />
+           </g>
+         </svg>
+         
+      </div>
+      <div id="mitteltrackt" class="room">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+         <!-- Created with Inkscape (http://www.inkscape.org/) -->
+         
+         <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 73.807686 96.226974"
+            version="1.1"
+            id="svg36"
+            inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+            sodipodi:docname="mittel2.svg"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+           <sodipodi:namedview
+              id="namedview38"
+              pagecolor="#ffffff"
+              bordercolor="#666666"
+              borderopacity="1.0"
+              inkscape:pageshadow="2"
+              inkscape:pageopacity="0.0"
+              inkscape:pagecheckerboard="0"
+              inkscape:document-units="mm"
+              showgrid="false"
+              fit-margin-top="0"
+              fit-margin-left="0"
+              fit-margin-right="0"
+              fit-margin-bottom="0"
+              inkscape:zoom="0.64052329"
+              inkscape:cx="-344.24978"
+              inkscape:cy="189.68865"
+              inkscape:window-width="1920"
+              inkscape:window-height="1137"
+              inkscape:window-x="1358"
+              inkscape:window-y="-8"
+              inkscape:window-maximized="1"
+              inkscape:current-layer="layer1" />
+           <defs
+              id="defs33" />
+           <g
+              inkscape:label="Ebene 1"
+              inkscape:groupmode="layer"
+              id="layer1"
+              transform="translate(-72.560685,-98.114609)">
+             <rect
+                style="fill:#ff6600;stroke-width:0.264583"
+                id="MU1"
+                width="29.976463"
+                height="23.930775"
+                x="116.39191"
+                y="98.114609" 
+                onclick="vote('MU1')"
+                />
+             <rect
+                style="fill:#aa0000;stroke-width:0.264583"
+                id="MU2"
+                width="29.976463"
+                height="24.182701"
+                x="116.39191"
+                y="122.04539" 
+                onclick="vote('MU2')"
+                />
+             <rect
+                style="fill:#00ff00;stroke-width:0.264583"
+                id="MU3"
+                width="29.976463"
+                height="24.434603"
+                x="116.39191"
+                y="146.22809" 
+                onclick="vote('MU3')"
+                />
+             <rect
+                style="fill:#0000ff;stroke-width:0.264583"
+                id="MU4"
+                width="29.976461"
+                height="23.678894"
+                x="116.39191"
+                y="170.66269" 
+                onclick="vote('MU4')"
+                />
+             <path
+                id="MU5"
+                style="fill:#0000ff;stroke-width:0.264583"
+                d="m 72.560685,99.626227 v 12.091253 5.03794 h 9.824207 v -5.03794 h 12.595097 v 5.03794 h 9.824211 v -5.03794 h -0.25167 V 99.626227 Z"
+                onclick="vote('MU5')"
+                />
+             <path
+                id="MU6"
+                style="fill:#ff00ff;stroke-width:0.264583"
+                d="m 82.384892,111.71748 v 5.03794 h -9.824207 v 7.30497 h 32.495695 v -7.30497 H 94.979989 v -5.03794 z" 
+                onclick="vote('MU6')"
+                />
+             <rect
+                style="fill:#ff6600;stroke-width:0.264583"
+                id="MU7"
+                width="32.495487"
+                height="12.84705"
+                x="72.560783"
+                y="124.06064" 
+                onclick="vote('MU7')"
+                />
+             <rect
+                style="fill:#d4aa00;stroke-width:0.264583"
+                id="MU8"
+                width="32.495502"
+                height="33.755013"
+                x="72.560783"
+                y="136.90768" 
+                onclick="vote('MU8')"
+                />
+             <rect
+                style="fill:#17280b;stroke-width:0.264583"
+                id="MU9"
+                width="32.495495"
+                height="23.175076"
+                x="72.560783"
+                y="170.6627" 
+                onclick="vote('MU9')"
+                />
+           </g>
+         </svg>
+         
+
+      </div>
+      <div id="nawi" class="room">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg457"
+   xml:space="preserve"
+   width="85%"
+   height="85%"
+   viewBox="0 0 312.28043 433.19383"
+   sodipodi:docname="Pläne Isarnwohld nawit2.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs461" /><sodipodi:namedview
+     id="namedview459"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.050338"
+     inkscape:cx="-112.82083"
+     inkscape:cy="258.48822"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g463"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" /><g
+     id="g463"
+     inkscape:groupmode="layer"
+     inkscape:label="Pläne Isarnwohld"
+     transform="matrix(1.3333333,0,0,-1.3333333,-265.6288,742.78896)">
+     <rect
+   style="fill:#17280b;stroke-width:0.75"
+   id="NU1"
+   width="79.974258"
+   height="63.550972"
+   x="199.93564"
+   y="-295.74731"
+   transform="scale(1,-1)" 
+   onclick="vote('NU1')"
+   /><rect
+   style="fill:#aad400;stroke-width:0.75"
+   id="NU2"
+   width="80.688301"
+   height="65.693123"
+   x="199.2216"
+   y="-361.44043"
+   transform="scale(1,-1)"
+   onclick="vote('NU2')"
+   /><rect
+   style="fill:#786721;stroke-width:0.75"
+   id="NU3"
+   width="80.688301"
+   height="79.974266"
+   x="199.2216"
+   y="-441.41473"
+   transform="scale(1,-1)"
+   onclick="vote('NU3')"
+   /><rect
+   style="fill:#00ff00;stroke-width:0.75"
+   id="NU4"
+   width="80.688301"
+   height="32.132477"
+   x="199.2216"
+   y="-473.54721"
+   transform="scale(1,-1)"
+   onclick="vote('NU4')"
+   /><rect
+   style="fill:#ff7f2a;stroke-width:0.75"
+   id="NU5"
+   width="80.688301"
+   height="83.544548"
+   x="199.2216"
+   y="-557.09174"
+   transform="scale(1,-1)"
+   onclick="vote('NU5')"
+   /><rect
+   style="fill:#ffcc00;stroke-width:0.75"
+   id="NU6"
+   width="75.689919"
+   height="82.830482"
+   x="357.742"
+   y="-321.45331"
+   transform="scale(1,-1)"
+   onclick="vote('NU6')"
+   /><rect
+   style="fill:#c87137;stroke-width:0.75"
+   id="NU7"
+   width="75.689919"
+   height="128.53006"
+   x="357.742"
+   y="-449.98337"
+   transform="scale(1,-1)"
+   onclick="vote('NU7')"
+   /><rect
+   style="fill:#ac9d93;stroke-width:0.75"
+   id="NU8"
+   width="74.975861"
+   height="81.402374"
+   x="358.45605"
+   y="-531.38574"
+   transform="scale(1,-1)"
+   onclick="vote('NU8')"
+   /><rect
+   style="fill:#55ddff;stroke-width:0.75"
+   id="NU9"
+   width="19.993565"
+   height="59.266636"
+   x="310.61432"
+   y="-534.95599"
+   transform="scale(1,-1)"
+   onclick="makevisible('nawioben')"
+   /><rect
+   style="fill:#ff8080;stroke-width:0.75"
+   id="rect688"
+   width="41.415257"
+   height="61.408825"
+   x="299.90347"
+   y="-333.59222"
+   transform="scale(1,-1)"
+   onclick="makevisible('nawioben')"
+   /></g></svg>
+      </div>
+      <div id="verwaltung">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90%"
+   height="90%"
+   viewBox="0 0 55.767483 78.806908"
+   version="1.1"
+   id="svg37"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="verwaltung.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview39"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="-362.98446"
+     inkscape:cy="155.34174"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs34" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-77.863129,-107.23772)">
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.264583"
+       id="VU1"
+       width="18.330793"
+       height="8.0608988"
+       x="77.863129"
+       y="113.55468"
+       onclick="vote('VU1')"
+       />
+    <rect
+       style="fill:#ff7f2a;fill-rule:evenodd;stroke-width:0.264583"
+       id="VU2"
+       width="18.330793"
+       height="20.694796"
+       x="77.863129"
+       y="121.61558"
+       onclick="vote('VU2')"
+       />
+    <rect
+       style="fill:#deaa87;fill-rule:evenodd;stroke-width:0.264583"
+       id="VU3"
+       width="18.330793"
+       height="13.215224"
+       x="77.863129"
+       y="142.31036"
+       onclick="vote('VU3')"
+       />
+    <rect
+       style="fill:#483e37;fill-rule:evenodd;stroke-width:0.264583"
+       id="VU4"
+       width="18.330793"
+       height="18.040134"
+       x="77.863129"
+       y="155.52559"
+       onclick="vote('VU4')"
+       />
+    <rect
+       style="fill:#ffdd55;fill-rule:evenodd;stroke-width:0.264583"
+       id="VU5"
+       width="18.330793"
+       height="6.1038103"
+       x="77.863129"
+       y="173.56572"
+       onclick="vote('VU5')"
+       />
+    <rect
+       style="fill:#504416;fill-rule:evenodd;stroke-width:0.264583"
+       id="VU6"
+       width="18.330797"
+       height="6.3750815"
+       x="77.863129"
+       y="179.66954"
+       onclick="vote('VU6')"
+       />
+    <rect
+       style="fill:#d4ff2a;stroke-width:0.264583"
+       id="VU7"
+       width="19.939114"
+       height="15.056046"
+       x="113.6915"
+       y="107.23772"
+       onclick="vote('VU7')"
+       />
+    <rect
+       style="fill:#cdde87;stroke-width:0.264583"
+       id="VU8"
+       width="19.939114"
+       height="16.141176"
+       x="113.6915"
+       y="122.29377"
+       onclick="vote('VU8')"
+       />
+    <rect
+       style="fill:#a7ac93;stroke-width:0.264583"
+       id="VU9"
+       width="19.939114"
+       height="16.005537"
+       x="113.6915"
+       y="138.43494"
+       onclick="vote('VU9')"
+       />
+    <rect
+       style="fill:#aade87;stroke-width:0.264583"
+       id="VU10"
+       width="19.939114"
+       height="14.920406"
+       x="113.6915"
+       y="154.44048"
+       onclick="vote('VU10')"
+       />
+    <rect
+       style="fill:#00ff00;stroke-width:0.264583"
+       id="VU11"
+       width="19.939104"
+       height="16.141171"
+       x="113.6915"
+       y="169.36089"
+       onclick="vote('VU11')"
+       />
+    <rect
+       style="fill:#00aad4;stroke-width:0.264583"
+       id="rect317"
+       width="4.204843"
+       height="13.835291"
+       x="102.84029"
+       y="112.66332"
+       onclick="makevisible('verwaltungoben')"
+       />
+    <rect
+       style="fill:#55ddff;stroke-width:0.264583"
+       id="rect319"
+       width="9.7660866"
+       height="15.05605"
+       x="99.991852"
+       y="162.44322"
+       inkscape:transform-center-x="-0.51265551"
+       inkscape:transform-center-y="-0.51265549" 
+       onclick="makevisible('verwaltungoben')"
+       />
+  </g>
+</svg>
+
+      </div>
+      <div id="hauptoben">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="85%"
+   height="85%"
+   viewBox="0 0 77.450516 74.059486"
+   version="1.1"
+   id="svg1527"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="hupt oben.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1529"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="147.53562"
+     inkscape:cy="135.04583"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1524" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-66.195465,-112.91602)">
+    <rect
+       style="fill:#ff8080;stroke-width:0.264583"
+       id="HO1"
+       width="16.683735"
+       height="18.040125"
+       x="87.897881"
+       y="130.8205"
+       ry="0" 
+       onclick="vote('HO1')"
+       />
+    <rect
+       style="fill:#d45500;stroke-width:0.264583"
+       id="HO2"
+       width="18.040134"
+       height="18.040134"
+       x="104.58161"
+       y="130.8205"
+       onclick="vote('HO2')"
+       />
+    <rect
+       style="fill:#c83737;stroke-width:0.264583"
+       id="HO3"
+       width="15.462972"
+       height="17.904493"
+       x="81.929718"
+       y="112.91602"
+       onclick="vote('HO3')"
+       />
+    <rect
+       style="fill:#800080;stroke-width:0.264583"
+       id="HO4"
+       width="15.734246"
+       height="17.904484"
+       x="66.195465"
+       y="112.91602"
+       onclick="vote('HO4')"
+       />
+    <rect
+       style="fill:#0000ff;stroke-width:0.264583"
+       id="HO5"
+       width="13.292725"
+       height="19.125265"
+       x="66.195465"
+       y="130.8205"
+       onclick="vote('HO5')"
+       />
+    <rect
+       style="fill:#483e37;stroke-width:0.264583"
+       id="HO6"
+       width="16.683727"
+       height="17.768845"
+       x="66.195465"
+       y="149.94576"
+       onclick="vote('HO6')"
+       />
+    <rect
+       style="fill:#00ff00;stroke-width:0.264583"
+       id="HO7"
+       width="16.548086"
+       height="19.260893"
+       x="66.195465"
+       y="167.71461"
+       onclick="vote('HO7')"
+       />
+    <rect
+       style="fill:#00ffff;stroke-width:0.264583"
+       id="HO8"
+       width="15.327327"
+       height="10.173022"
+       x="97.392693"
+       y="112.91602"
+       ry="0"
+       onclick="vote('HO8')"
+       />
+    <rect
+       style="fill:#ffcc00;stroke-width:0.264583"
+       id="HO9"
+       width="15.327327"
+       height="7.867115"
+       x="97.392693"
+       y="123.08904"
+       onclick="vote('HO9')"
+       />
+    <rect
+       style="fill:#ff00ff;stroke-width:0.264583"
+       id="HO10"
+       width="14.64913"
+       height="17.904497"
+       x="112.72002"
+       y="112.91602"
+       onclick="vote('HO10')"
+       />
+    <rect
+       style="fill:#aa4400;stroke-width:0.264583"
+       id="HO11"
+       width="16.141174"
+       height="17.904497"
+       x="127.36914"
+       y="112.91602"
+       onclick="vote('HO11')"
+       />
+    <rect
+       style="fill:#d4ff2a;stroke-width:0.264583"
+       id="HO12"
+       width="13.021449"
+       height="17.768854"
+       x="130.62451"
+       y="130.95615"
+       onclick="vote('HO12')"
+       />
+    <rect
+       style="fill:#d3bc5f;stroke-width:0.264583"
+       id="HO13"
+       width="15.869918"
+       height="17.904495"
+       x="127.77606"
+       y="148.72499"
+       onclick="vote('HO13')"
+       />
+    <rect
+       style="fill:#f6ffd5;stroke-width:0.264583"
+       id="HO14"
+       width="15.869914"
+       height="18.175772"
+       x="127.77606"
+       y="166.62949"
+       onclick="vote('HO14')"
+       />
+    <rect
+       style="fill:#8787de;stroke-width:0.264583"
+       id="HO15"
+       width="14.242218"
+       height="15.191676"
+       x="106.07364"
+       y="170.42741"
+       onclick="vote('HO15')"
+       />
+    <rect
+       style="fill:#7f2aff;stroke-width:0.264583"
+       id="HO16"
+       width="7.5958433"
+       height="15.191665"
+       x="98.477798"
+       y="170.42741"
+       onclick="vote('HO16')"
+       />
+    <rect
+       style="fill:#8d5fd3;stroke-width:0.264583"
+       id="HO17"
+       width="8.0027523"
+       height="15.191667"
+       x="90.475044"
+       y="170.42741"
+       onclick="vote('HO17')"
+       />
+    <rect
+       style="fill:#aa00d4;stroke-width:0.264583"
+       id="HO18"
+       width="19.532173"
+       height="15.05605"
+       x="95.900642"
+       y="148.86063" 
+       onclick="makevisible('hauptgebäude')"
+       />
+  </g>
+</svg>
+
+      </div>
+      <div id="nawioben">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="80%"
+   height="80%"
+   viewBox="0 0 54.773159 76.594284"
+   version="1.1"
+   id="svg2133"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="navi_oben.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2135"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="97.576468"
+     inkscape:cy="124.11727"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2130" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-79.186432,-115.77935)">
+    <rect
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="NO1"
+       width="17.963837"
+       height="18.514858"
+       x="79.186432"
+       y="115.77935"
+       onclick="vote('NO1')"
+       />
+    <rect
+       style="fill:#808000;stroke-width:0.264583"
+       id="NO2"
+       width="17.963837"
+       height="19.837376"
+       x="79.186432"
+       y="134.2942"
+       onclick="vote('NO2')"
+       />
+    <rect
+       style="fill:#008000;stroke-width:0.264583"
+       id="NO3"
+       width="17.963837"
+       height="19.947586"
+       x="79.186432"
+       y="154.13159"
+       onclick="vote('NO3')"
+       />
+    <rect
+       style="fill:#00ffff;stroke-width:0.264583"
+       id="NO4"
+       width="17.963837"
+       height="18.294456"
+       x="79.186432"
+       y="174.07918"
+       onclick="vote('NO4')"
+       />
+    <rect
+       style="fill:#ff00ff;stroke-width:0.264583"
+       id="NO5"
+       width="19.065916"
+       height="20.057775"
+       x="114.89368"
+       y="120.40807"
+       onclick="vote('NO5')"
+       />
+    <rect
+       style="fill:#800080;stroke-width:0.264583"
+       id="NO6"
+       width="19.065916"
+       height="30.527514"
+       x="114.89368"
+       y="140.46585"
+       onclick="vote('NO6')"
+       />
+    <rect
+       style="fill:#ffff00;stroke-width:0.264583"
+       id="NO7"
+       width="19.065914"
+       height="20.719027"
+       x="114.89368"
+       y="170.99336"
+       onclick="vote('NO7')"
+       />
+    <rect
+       style="fill:#c87137;stroke-width:0.264583"
+       id="rect1927"
+       width="5.0695486"
+       height="17.192381"
+       x="103.10148"
+       y="118.42435" 
+       onclick="makevisible('nawi')"
+       />
+    <rect
+       style="fill:#c87137;stroke-width:0.264583"
+       id="rect1951"
+       width="10.02889"
+       height="17.523005"
+       x="101.8892"
+       y="167.35651" 
+       onclick="makevisible('nawi')"
+       />
+  </g>
+</svg>
+
+      </div>
+      <div id="verwaltungoben">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="85%"
+   height="85%"
+   viewBox="0 0 56.316086 77.696335"
+   version="1.1"
+   id="svg2846"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="verwaltung_oben.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2848"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="116.31115"
+     inkscape:cy="160.02541"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2843" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-74.284233,-106.1407)">
+    <rect
+       style="fill:#c83737;stroke-width:0.264583"
+       id="VO1"
+       width="18.62508"
+       height="8.4859838"
+       x="74.284233"
+       y="111.65108"
+       onclick="vote('VO1')"
+       />
+    <rect
+       style="fill:#aa4400;stroke-width:0.264583"
+       id="VO2"
+       width="18.735289"
+       height="8.5961981"
+       x="74.284233"
+       y="120.13705" 
+       onclick="vote('VO2')"
+       />
+    <rect
+       style="fill:#00ff00;stroke-width:0.264583"
+       id="VO3"
+       width="18.845497"
+       height="10.469716"
+       x="74.284233"
+       y="128.73326" 
+       onclick="vote('VO3')"
+       />
+    <rect
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="VO4"
+       width="10.579927"
+       height="15.429056"
+       x="74.284233"
+       y="139.20297" 
+       onclick="vote('VO4')"
+       />
+    <rect
+       style="fill:#ffff00;stroke-width:0.264583"
+       id="VO5"
+       width="8.3757753"
+       height="8.3757734"
+       x="84.974365"
+       y="143.72148" 
+       onclick="vote('VO5')"
+       />
+    <rect
+       style="fill:#0000ff;stroke-width:0.264583"
+       id="VO6"
+       width="8.706399"
+       height="12.894287"
+       x="85.635612"
+       y="157.38722" 
+       onclick="vote('VO6')"
+       />
+    <rect
+       style="fill:#000080;stroke-width:0.264583"
+       id="VO7"
+       width="11.35138"
+       height="8.7064018"
+       x="74.284233"
+       y="154.63203"
+       onclick="vote('VO7')"
+       />
+    <rect
+       style="fill:#00ffff;stroke-width:0.264583"
+       id="VO8"
+       width="11.35138"
+       height="9.5880594"
+       x="74.284233"
+       y="163.33842"
+       onclick="vote('VO8')"
+       />
+    <rect
+       style="fill:#ff00ff;stroke-width:0.264583"
+       id="VO9"
+       width="12.012627"
+       height="10.800347"
+       x="74.284233"
+       y="172.92648"
+       onclick="vote('VO9')"
+       />
+    <rect
+       style="fill:#800080;stroke-width:0.264583"
+       id="VO10"
+       width="8.4859838"
+       height="7.824738"
+       x="86.186653"
+       y="176.0123"
+       onclick="vote('VO10')"
+       />
+    <rect
+       style="fill:#916f6f;stroke-width:0.264583"
+       id="VO11"
+       width="19.176132"
+       height="10.910542"
+       x="111.42419"
+       y="171.27338"
+       onclick="vote('VO11')"
+       />
+    <rect
+       style="fill:#241c1c;stroke-width:0.264583"
+       id="VO12"
+       width="19.176132"
+       height="8.5961857"
+       x="111.42419"
+       y="162.6772"
+       onclick="vote('VO12')"
+       />
+    <rect
+       style="fill:#ccff00;stroke-width:0.264583"
+       id="VO13"
+       width="19.176111"
+       height="39.895157"
+       x="111.42419"
+       y="122.78205"
+       onclick="vote('VO13')"
+       />
+    <rect
+       style="fill:#676c53;stroke-width:0.264583"
+       id="VO14"
+       width="19.176115"
+       height="16.641338"
+       x="111.42419"
+       y="106.1407"
+       onclick="vote('VO14')"
+       />
+    <rect
+       style="fill:#668000;stroke-width:0.264583"
+       id="rect2587"
+       width="4.9593415"
+       height="17.853628"
+       x="99.521774"
+       y="110.10817"
+       onclick="makevisible('verwaltung')"
+       />
+    <rect
+       style="fill:#668000;stroke-width:0.264583"
+       id="rect2633"
+       width="9.1472292"
+       height="16.090307"
+       x="98.199287"
+       y="158.70972" 
+       onclick="makevisible('verwaltung')"
+       />
+  </g>
+</svg>
+
+      </div>
+      <div id="oberstufe">
+
+      </div>
+      <div id="zentral">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+         <!-- Created with Inkscape (http://www.inkscape.org/) -->
+         
+         <svg
+            width="100%"
+            height="80%"
+            viewBox="0 0 229.14136 104.4071"
+            version="1.1"
+            id="svg3201"
+            inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+            sodipodi:docname="zentral2.0.svg"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+           <sodipodi:namedview
+              id="namedview3203"
+              pagecolor="#505050"
+              bordercolor="#eeeeee"
+              borderopacity="1"
+              inkscape:pageshadow="0"
+              inkscape:pageopacity="0"
+              inkscape:pagecheckerboard="0"
+              inkscape:document-units="mm"
+              showgrid="false"
+              fit-margin-top="0"
+              fit-margin-left="0"
+              fit-margin-right="0"
+              fit-margin-bottom="0"
+              inkscape:zoom="0.64052329"
+              inkscape:cx="445.7293"
+              inkscape:cy="199.05599"
+              inkscape:window-width="1920"
+              inkscape:window-height="1137"
+              inkscape:window-x="1358"
+              inkscape:window-y="-8"
+              inkscape:window-maximized="1"
+              inkscape:current-layer="layer1" />
+           <defs
+              id="defs3198" />
+           <g
+              inkscape:label="Ebene 1"
+              inkscape:groupmode="layer"
+              id="layer1"
+              transform="translate(12.954541,-95.676842)">
+             <rect
+                style="fill:#800000;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU1"
+                width="30.410898"
+                height="31.663107"
+                x="2.454567"
+                y="95.676842"
+                onclick="vote('ZU1')"
+                />
+             <rect
+                style="fill:#ff0000;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU2"
+                width="31.842005"
+                height="31.663111"
+                x="32.865467"
+                y="95.676842" 
+                onclick="vote('ZU2')"
+                />
+             <rect
+                style="fill:#808000;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU3"
+                width="15.563234"
+                height="17.17322"
+                x="64.707466"
+                y="95.676842" 
+                onclick="vote('ZU3')"
+                />
+             <rect
+                style="fill:#ffff00;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU4"
+                width="15.563234"
+                height="7.6921592"
+                x="64.707466"
+                y="112.85006" 
+                onclick="vote('ZU4')"
+                />
+             <rect
+                style="fill:#008000;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU5"
+                width="16.457672"
+                height="8.5865984"
+                x="80.270699"
+                y="95.676842" 
+                onclick="vote('ZU5')"
+                />
+             <rect
+                style="fill:#00ff00;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU6"
+                width="16.457672"
+                height="11.091037"
+                x="80.270699"
+                y="104.26344" 
+                onclick="vote('ZU6')"
+                />
+             <rect
+                style="fill:#008080;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU7"
+                width="12.879917"
+                height="11.448815"
+                x="80.270699"
+                y="115.35448" 
+                onclick="vote('ZU7')"
+                />
+             <rect
+                style="fill:#00ffff;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU8"
+                width="9.3021564"
+                height="11.448815"
+                x="93.15062"
+                y="115.35448" 
+                onclick="vote('ZU8')"
+                />
+             <rect
+                style="fill:#000080;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU9"
+                width="17.530993"
+                height="8.407712"
+                x="96.728371"
+                y="95.676842" 
+                onclick="vote('ZU9')"
+                />
+             <rect
+                style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU10"
+                width="17.530991"
+                height="11.448811"
+                x="96.728371"
+                y="104.08456" 
+                onclick="vote('ZU10')"
+                />
+             <rect
+                style="fill:#800080;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU11"
+                width="11.806585"
+                height="11.448815"
+                x="102.45277"
+                y="115.35448" 
+                onclick="vote('ZU11')"
+                />
+             <path
+                id="ZU12"
+                style="fill:#ff00ff;fill-rule:evenodd;stroke-width:0.264583"
+                d="m 114.25948,95.677023 v 25.580867 h 14.66887 15.38408 V 109.80898 H 128.92835 V 95.677023 Z" 
+                onclick="vote('ZU12')"
+                />
+             <rect
+                style="fill:#2b0000;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU13"
+                width="15.384073"
+                height="14.131953"
+                x="128.92836"
+                y="95.677017" 
+                onclick="vote('ZU13')"
+                />
+             <rect
+                style="fill:#782121;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU14"
+                width="15.026439"
+                height="5.3665128"
+                x="114.25948"
+                y="121.2579" 
+                onclick="vote('ZU14')"
+                />
+             <rect
+                style="fill:#aa4400;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU15"
+                width="15.026566"
+                height="5.366509"
+                x="129.28592"
+                y="121.2579" 
+                onclick="vote('ZU15')"
+                />
+             <rect
+                style="fill:#ff6600;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU16"
+                width="13.59552"
+                height="14.8475"
+                x="144.31244"
+                y="95.677017" 
+                onclick="vote('ZU16')"
+                />
+             <rect
+                style="fill:#ffccaa;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU17"
+                width="14.84768"
+                height="14.847497"
+                x="157.90796"
+                y="95.677017" 
+                onclick="vote('ZU17')"
+                />
+             <rect
+                style="fill:#eeffaa;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU18"
+                width="9.8828697"
+                height="14.8475"
+                x="172.75563"
+                y="95.677017" 
+                onclick="vote('ZU18')"
+                />
+             <rect
+                style="fill:#ccff00;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU19"
+                width="16.680592"
+                height="6.1317205"
+                x="165.9579"
+                y="110.52451"
+                onclick="vote('ZU19')"
+                />
+             <rect
+                style="fill:#668000;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU20"
+                width="11.140577"
+                height="10.127784"
+                x="157.44559"
+                y="116.65623" 
+                onclick="vote('ZU20')"
+                />
+             <rect
+                style="fill:#3e4837;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU21"
+                width="7.216054"
+                height="10.127784"
+                x="168.58617"
+                y="116.65623" 
+                onclick="vote('ZU21')"
+                />
+             <rect
+                style="fill:#bec8b7;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU22"
+                width="6.8362751"
+                height="10.127784"
+                x="175.80222"
+                y="116.65623" 
+                onclick="vote('ZU22')"
+                />
+             <rect
+                style="fill:#55d400;fill-rule:evenodd;stroke-width:0.264583"
+                id="ZU23"
+                width="33.548321"
+                height="31.107008"
+                x="182.63849"
+                y="95.677017" 
+                onclick="vote('ZU23')"
+                />
+             <rect
+                style="fill:#800000;stroke-width:0.264583"
+                id="ZU24"
+                width="31.269564"
+                height="30.130188"
+                x="-12.954541"
+                y="161.72491" 
+                onclick="vote('ZU24')"
+                />
+             <rect
+                style="fill:#808000;stroke-width:0.264583"
+                id="ZU25"
+                width="15.19169"
+                height="9.2416172"
+                x="18.315025"
+                y="161.72491"
+                onclick="vote('ZU5')"
+                />
+             <rect
+                style="fill:#ff0000;stroke-width:0.264583"
+                id="ZU26"
+                width="15.19169"
+                height="20.888573"
+                x="18.315025"
+                y="170.96654"
+                onclick="vote('ZU26')"
+                />
+             <rect
+                style="fill:#ffff00;stroke-width:0.264583"
+                id="ZU27"
+                width="29.750397"
+                height="30.130194"
+                x="33.506714"
+                y="161.72491"
+                onclick="vote('ZU27')"
+                />
+             <rect
+                style="fill:#008000;stroke-width:0.264583"
+                id="ZU28"
+                width="30.383385"
+                height="30.256784"
+                x="63.003914"
+                y="169.70056"
+                onclick="vote('ZU28')"
+                />
+             <rect
+                style="fill:#00ff00;stroke-width:0.264583"
+                id="ZU29"
+                width="29.623789"
+                height="30.383381"
+                x="93.387306"
+                y="169.70056"
+                onclick="vote('ZU29')"
+                />
+             <rect
+                style="fill:#008080;stroke-width:0.264583"
+                id="ZU30"
+                width="30.130182"
+                height="30.256784"
+                x="123.0111"
+                y="169.70056"
+                onclick="vote('ZU30')"
+                />
+             <rect
+                style="fill:#00ffff;stroke-width:0.264583"
+                id="ZU31"
+                width="14.052314"
+                height="25.952471"
+                x="153.01468"
+                y="174.00487"
+                onclick="vote('ZU31')"
+                />
+             <rect
+                style="fill:#000080;stroke-width:0.264583"
+                id="ZU32"
+                width="30.889784"
+                height="30.003592"
+                x="166.9404"
+                y="162.7377"
+                onclick="vote('ZU32')"
+                />
+             <rect
+                style="fill:#000000;stroke-width:0.264583"
+                id="rect2930"
+                width="16.964054"
+                height="26.965252"
+                x="63.5103"
+                y="135.64584"
+                onclick="makevisible('zentraloben')"
+                />
+             <rect
+                style="fill:#000000;stroke-width:0.264583"
+                id="rect2954"
+                width="16.964054"
+                height="24.939692"
+                x="157.1924"
+                y="137.92461"
+                onclick="makevisible('zentraloben')"
+                />
+           </g>
+         </svg>
+         
+      </div>
+      <div id="zentraloben">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+         <!-- Created with Inkscape (http://www.inkscape.org/) -->
+         
+         <svg
+            width="100%"
+            height="80%"
+            viewBox="0 0 245.10167 102.52454"
+            version="1.1"
+            id="svg4402"
+            inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+            sodipodi:docname="zentraloben.svg"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+           <sodipodi:namedview
+              id="namedview4404"
+              pagecolor="#505050"
+              bordercolor="#eeeeee"
+              borderopacity="1"
+              inkscape:pageshadow="0"
+              inkscape:pageopacity="0"
+              inkscape:pagecheckerboard="0"
+              inkscape:document-units="mm"
+              showgrid="false"
+              fit-margin-top="0"
+              fit-margin-left="0"
+              fit-margin-right="0"
+              fit-margin-bottom="0"
+              inkscape:zoom="0.64052329"
+              inkscape:cx="476.95377"
+              inkscape:cy="169.39275"
+              inkscape:window-width="1920"
+              inkscape:window-height="1137"
+              inkscape:window-x="1358"
+              inkscape:window-y="-8"
+              inkscape:window-maximized="1"
+              inkscape:current-layer="layer1" />
+           <defs
+              id="defs4399" />
+           <g
+              inkscape:label="Ebene 1"
+              inkscape:groupmode="layer"
+              id="layer1"
+              transform="translate(20.934696,-103.64037)">
+             <rect
+                style="fill:#800000;stroke-width:0.264583"
+                id="ZO1"
+                width="31.99169"
+                height="33.755024"
+                x="-4.0571918"
+                y="103.64037" 
+                onclick="vote('ZO1')"
+                />
+             <rect
+                style="fill:#ff0000;stroke-width:0.264583"
+                id="ZO2"
+                width="34.006912"
+                height="33.755016"
+                x="27.934498"
+                y="103.64037" 
+                onclick="vote('ZO2')"
+                />
+             <rect
+                style="fill:#ffff00;stroke-width:0.264583"
+                id="ZO3"
+                width="17.633213"
+                height="15.869902"
+                x="61.941406"
+                y="103.64037"
+                onclick="vote('ZO3')"
+                />
+             <rect
+                style="fill:#808000;stroke-width:0.264583"
+                id="ZO4"
+                width="17.885117"
+                height="11.587544"
+                x="61.941406"
+                y="119.51026"
+                onclick="vote('ZO4')"
+                />
+             <rect
+                style="fill:#008000;stroke-width:0.264583"
+                id="ZO5"
+                width="41.060192"
+                height="32.99931"
+                x="79.574615"
+                y="103.64037"
+                onclick="vote('ZO5')"
+                />
+             <rect
+                style="fill:#00ff00;stroke-width:0.264583"
+                id="ZO6"
+                width="39.800686"
+                height="32.999306"
+                x="120.6348"
+                y="103.64037"
+                onclick="vote('ZO6')"
+                />
+             <rect
+                style="fill:#008080;stroke-width:0.264583"
+                id="ZO7"
+                width="15.114178"
+                height="26.953634"
+                x="160.43549"
+                y="103.64037"
+                onclick="vote('ZO7')"
+                />
+             <rect
+                style="fill:#00ffff;stroke-width:0.264583"
+                id="ZO8"
+                width="34.762627"
+                height="34.006924"
+                x="175.54967"
+                y="103.64037"
+                onclick="vote('ZO8')"
+                />
+             <rect
+                style="fill:#000080;stroke-width:0.264583"
+                id="ZO9"
+                width="13.854665"
+                height="34.00692"
+                x="210.3123"
+                y="103.64037"
+                onclick="vote('ZO9')"
+                />
+             <rect
+                style="fill:#112b00;stroke-width:0.264583"
+                id="ZO10"
+                width="34.006912"
+                height="30.73217"
+                x="175.29778"
+                y="175.43274"
+                onclick="vote('ZO11')"
+                />
+             <rect
+                style="fill:#aa8800;stroke-width:0.264583"
+                id="ZO11"
+                width="31.235981"
+                height="27.205542"
+                x="127.93998"
+                y="148.2272"
+                onclick="vote('ZO12')"
+                />
+             <rect
+                style="fill:#803300;stroke-width:0.264583"
+                id="ZO12"
+                width="31.991686"
+                height="27.205528"
+                x="79.574615"
+                y="148.2272"
+                onclick="vote('ZO13')"
+                />
+             <rect
+                style="fill:#ff6600;stroke-width:0.264583"
+                id="ZO13"
+                width="16.373688"
+                height="27.205542"
+                x="111.5663"
+                y="148.2272"
+                onclick="vote('ZO14')"
+                />
+             <rect
+                style="fill:#55ffdd;stroke-width:0.264583"
+                id="ZO15"
+                width="34.762619"
+                height="29.976461"
+                x="-20.934696"
+                y="175.43274"
+                onclick="vote('ZO15')"
+                />
+             <rect
+                style="fill:#00aa88;stroke-width:0.264583"
+                id="ZO16"
+                width="18.137018"
+                height="21.159855"
+                x="13.827924"
+                y="184.24934"
+                onclick="vote('ZO16')"
+                />
+             <rect
+                style="fill:#5fd38d;stroke-width:0.264583"
+                id="ZO17"
+                width="30.732172"
+                height="30.228365"
+                x="31.964941"
+                y="175.18082"
+                onclick="vote('ZO17')"
+                />
+             <rect
+                style="fill:#0000ff;stroke-width:0.264583"
+                id="ZO18"
+                width="25.190304"
+                height="15.366084"
+                x="17.606468"
+                y="149.23482"
+                onclick="vote('ZO18')"
+                />
+             <rect
+                style="fill:#ff00ff;stroke-width:0.264583"
+                id="ZO19"
+                width="10.076123"
+                height="8.3127995"
+                x="42.796772"
+                y="149.23482"
+                onclick="vote('ZO19')"
+                />
+             <rect
+                style="fill:#800080;stroke-width:0.264583"
+                id="ZO20"
+                width="10.076122"
+                height="7.0532866"
+                x="42.796772"
+                y="157.54762"
+                onclick="vote('ZO20')"
+                />
+             <rect
+                style="fill:#000000;stroke-width:0.264583"
+                id="ZO21"
+                width="18.137014"
+                height="28.465042"
+                x="61.437599"
+                y="146.96768"
+                onclick="makevisible('zentral')"
+                />
+             <rect
+                style="fill:#000000;stroke-width:0.264583"
+                id="rect4208"
+                width="16.121798"
+                height="27.20553"
+                x="159.17596"
+                y="148.2272" 
+                onclick="makevisible('zentral')"
+                />
+           </g>
+         </svg>
+         
+      </div>
+      <div id="KuBiz">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100%"
+   height="90%"
+   viewBox="0 0 160.46236 74.296539"
+   version="1.1"
+   id="svg4882"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="KuBiz.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4884"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.2861282"
+     inkscape:cx="330.06042"
+     inkscape:cy="111.5752"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4879" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-17.66729,-118.99359)">
+    <path
+       id="KU1"
+       style="fill:#800000;stroke-width:0.264583"
+       d="m 17.66729,120.24578 v 11.62771 19.49856 h 13.953154 v -19.49856 h 30.768664 v -11.62771 z" 
+       onclick="vote('KU1')"
+       />
+    <rect
+       style="fill:#ff00ff;stroke-width:0.264583"
+       id="KU2"
+       width="18.246542"
+       height="44.36414"
+       x="39.312828"
+       y="138.67123"
+       onclick="vote('KU2')"
+       />
+    <rect
+       style="fill:#d45500;stroke-width:0.264583"
+       id="KU3"
+       width="28.08536"
+       height="44.36414"
+       x="57.559368"
+       y="138.67123" 
+       onclick="vote('KU3')"
+       />
+    <rect
+       style="fill:#ff9955;stroke-width:0.264583"
+       id="KU4"
+       width="30.410902"
+       height="44.36414"
+       x="85.64473"
+       y="138.67123" 
+       onclick="vote('KU4')"
+       />
+    <rect
+       style="fill:#00ffcc;stroke-width:0.264583"
+       id="KU5"
+       width="62.07402"
+       height="44.364136"
+       x="116.05563"
+       y="138.67123"
+       onclick="vote('KU5')"
+       />
+    <rect
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="KU6"
+       width="12.343249"
+       height="11.627703"
+       x="90.474693"
+       y="120.2458"
+       onclick="vote('KU6')"
+       />
+    <rect
+       style="fill:#808000;stroke-width:0.264583"
+       id="KU7"
+       width="12.87991"
+       height="4.8299708"
+       x="102.81795"
+       y="120.2458"
+       onclick="vote('KU7')"
+       />
+    <rect
+       style="fill:#ffff00;stroke-width:0.264583"
+       id="KU8"
+       width="4.6510725"
+       height="6.7977333"
+       x="102.81795"
+       y="125.07577"
+       onclick="vote('KU8')"
+       />
+    <rect
+       style="fill:#008000;stroke-width:0.264583"
+       id="KU9"
+       width="8.228838"
+       height="6.7977319"
+       x="107.46902"
+       y="125.07577"
+       onclick="vote('KU9')"
+       />
+    <rect
+       style="fill:#00ff00;stroke-width:0.264583"
+       id="KU10"
+       width="11.985476"
+       height="5.545516"
+       x="115.69786"
+       y="120.2458"
+       onclick="vote('KU10')"
+       />
+    <rect
+       style="fill:#008080;stroke-width:0.264583"
+       id="KU11"
+       width="11.985476"
+       height="6.0821867"
+       x="115.69786"
+       y="125.79131"
+       onclick="vote('KU11')"
+       />
+    <rect
+       style="fill:#00ffff;stroke-width:0.264583"
+       id="KU12"
+       width="13.953239"
+       height="11.806591"
+       x="127.68333"
+       y="120.2458"
+       onclick="vote('KU12')"
+       />
+    <rect
+       style="fill:#000080;stroke-width:0.264583"
+       id="KU13"
+       width="14.847672"
+       height="12.87991"
+       x="150.40207"
+       y="118.99359"
+       onclick="vote('KU13')"
+       />
+    <rect
+       style="fill:#0000ff;stroke-width:0.264583"
+       id="KU14"
+       width="11.627699"
+       height="6.2610645"
+       x="165.24974"
+       y="118.99359"
+       onclick="vote('KU14')"
+       />
+    <rect
+       style="fill:#800080;stroke-width:0.264583"
+       id="KU15"
+       width="11.806585"
+       height="6.6188459"
+       x="165.24974"
+       y="125.25465"
+       onclick="vote('KU15')"
+       />
+    <rect
+       style="fill:#0088aa;stroke-width:0.264583"
+       id="KU16"
+       width="52.70647"
+       height="10.254762"
+       x="125.42318"
+       y="183.03537"
+       onclick="vote('KU16')"
+       />
+  </g>
+</svg>
+
+      </div>
+      <div id="sporthalle">
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+         <!-- Created with Inkscape (http://www.inkscape.org/) -->
+         
+         <svg
+            width="100%"
+            height="90%"
+            viewBox="0 0 197.73746 148.735"
+            version="1.1"
+            id="svg6535"
+            inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+            sodipodi:docname="sporthalle.svg"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+           <sodipodi:namedview
+              id="namedview6537"
+              pagecolor="#505050"
+              bordercolor="#eeeeee"
+              borderopacity="1"
+              inkscape:pageshadow="0"
+              inkscape:pageopacity="0"
+              inkscape:pagecheckerboard="0"
+              inkscape:document-units="mm"
+              showgrid="false"
+              fit-margin-top="0"
+              fit-margin-left="0"
+              fit-margin-right="0"
+              fit-margin-bottom="0"
+              inkscape:zoom="0.64052329"
+              inkscape:cx="375.47425"
+              inkscape:cy="308.34164"
+              inkscape:window-width="1920"
+              inkscape:window-height="1137"
+              inkscape:window-x="1358"
+              inkscape:window-y="-8"
+              inkscape:window-maximized="1"
+              inkscape:current-layer="layer1" />
+           <defs
+              id="defs6532" />
+           <g
+              inkscape:label="Ebene 1"
+              inkscape:groupmode="layer"
+              id="layer1"
+              transform="translate(-5.6389217,-66.903717)">
+             <rect
+                style="fill:#800000;stroke-width:0.263843"
+                id="SU1"
+                width="197.73746"
+                height="96.655647"
+                x="5.6389217"
+                y="66.903717" 
+                onclick="vote('SU1')"
+                />
+             <rect
+                style="fill:#ff0000;stroke-width:0.264583"
+                id="SU2"
+                width="21.867413"
+                height="22.086"
+                x="5.6389217"
+                y="163.55937"
+                onclick="vote('SU2')"
+                />
+             <rect
+                style="fill:#ffff00;stroke-width:0.264583"
+                id="SU3"
+                width="7.9073315"
+                height="12.270019"
+                x="33.777672"
+                y="163.55937" 
+                onclick="vote('SU3')"
+                />
+             <rect
+                style="fill:#808000;stroke-width:0.264583"
+                id="SU4"
+                width="7.907331"
+                height="10.088639"
+                x="33.777672"
+                y="175.82939" 
+                onclick="vote('SU4')"
+                />
+             <rect
+                style="fill:#008000;stroke-width:0.264583"
+                id="SU5"
+                width="71.166023"
+                height="22.358681"
+                x="41.685001"
+                y="163.55937"
+                onclick="vote('SU5')"
+                />
+             <rect
+                style="fill:#008080;stroke-width:0.264583"
+                id="SU6"
+                width="6.8166595"
+                height="11.724661"
+                x="112.85102"
+                y="163.55937"
+                onclick="vote('SU6')"
+                />
+             <rect
+                style="fill:#00ff00;stroke-width:0.264583"
+                id="SU7"
+                width="6.8166623"
+                height="10.634007"
+                x="112.85102"
+                y="175.28403"
+                onclick="vote('SU7')"
+                />
+             <rect
+                style="fill:#00ffff;stroke-width:0.264583"
+                id="SU8"
+                width="11.179335"
+                height="22.086008"
+                x="126.75703"
+                y="163.55936"
+                onclick="vote('SU8')"
+                />
+             <rect
+                style="fill:#000080;stroke-width:0.264583"
+                id="SU9"
+                width="30.265991"
+                height="21.813354"
+                x="137.93636"
+                y="163.55936"
+                onclick="vote('SU9')"
+                />
+             <rect
+                style="fill:#0000ff;stroke-width:0.264583"
+                id="SU10"
+                width="7.0893497"
+                height="11.997351"
+                x="168.20235"
+                y="163.55936"
+                onclick="vote('SU10')"
+                />
+             <rect
+                style="fill:#800080;stroke-width:0.264583"
+                id="SU11"
+                width="7.0893488"
+                height="10.088671"
+                x="168.20235"
+                y="175.5567"
+                onclick="vote('SU11')"
+                />
+             <rect
+                style="fill:#d45500;stroke-width:0.264583"
+                id="SU12"
+                width="20.722679"
+                height="15.814674"
+                x="182.6537"
+                y="163.55937"
+                onclick="vote('SU12')"
+                />
+             <rect
+                style="fill:#ffb380;stroke-width:0.264583"
+                id="SU13"
+                width="20.45001"
+                height="7.0893335"
+                x="182.6537"
+                y="179.37404"
+                onclick="vote('SU13')"
+                />
+             <rect
+                style="fill:#cc00ff;stroke-width:0.264583"
+                id="SU14"
+                width="13.088003"
+                height="23.176664"
+                x="59.681004"
+                y="192.46205"
+                onclick="vote('SU14')"
+                />
+             <rect
+                style="fill:#672178;stroke-width:0.264583"
+                id="SU15"
+                width="12.54267"
+                height="23.17667"
+                x="72.769012"
+                y="192.46205"
+                onclick="vote('SU15')"
+                />
+             <rect
+                style="fill:#d400aa;stroke-width:0.264583"
+                id="SU16"
+                width="14.99667"
+                height="22.358671"
+                x="97.58168"
+                y="193.00739"
+                onclick="vote('SU16')"
+                />
+             <rect
+                style="fill:#800000;stroke-width:0.264583"
+                id="SU17"
+                width="13.088003"
+                height="22.904007"
+                x="125.39369"
+                y="192.73471"
+                onclick="vote('SU17')"
+                />
+             <rect
+                style="fill:#ff0000;stroke-width:0.264583"
+                id="SU18"
+                width="11.724665"
+                height="22.904011"
+                x="138.4817"
+                y="192.73471"
+                onclick="vote('SU18')"
+                />
+             <rect
+                style="fill:#008000;stroke-width:0.264583"
+                id="SU19"
+                width="14.996662"
+                height="22.631359"
+                x="163.0217"
+                y="192.18938"
+                onclick="vote('SU19')"
+                />
+             <rect
+                style="fill:#00ffff;stroke-width:0.264583"
+                id="SU20"
+                width="13.360671"
+                height="22.904003"
+                x="189.74304"
+                y="192.46205"
+                onclick="vote('SU20')"
+                />
+             <rect
+                style="fill:#5f5fd3;stroke-width:0.264583"
+                id="SU21"
+                width="15.269337"
+                height="22.631338"
+                x="32.414337"
+                y="192.46205"
+                onclick="vote('SU21')"
+                />
+             <rect
+                style="fill:#55ff99;stroke-width:0.264583"
+                id="SU22"
+                width="13.906002"
+                height="22.631338"
+                x="6.5109959"
+                y="192.73471"
+                onclick="vote('SU22')"
+                />
+             <rect
+                style="fill:#808000;stroke-width:0.264583"
+                id="SU23"
+                width="7.089335"
+                height="8.1800013"
+                x="155.93237"
+                y="192.18938"
+                onclick="vote('SU23')"
+                />
+             <rect
+                style="fill:#00ff00;stroke-width:0.264583"
+                id="SU24"
+                width="7.0893383"
+                height="7.3620005"
+                x="178.01836"
+                y="192.18938"
+                onclick="vote('SU24')"
+                />
+             <rect
+                style="fill:#ffff00;stroke-width:0.264583"
+                id="SU25"
+                width="7.3620067"
+                height="8.4526901"
+                x="155.65968"
+                y="206.36806"
+                onclick="vote('SU25')"
+                />
+             <rect
+                style="fill:#008080;stroke-width:0.264583"
+                id="SU26"
+                width="7.0893383"
+                height="8.7253571"
+                x="178.01836"
+                y="206.09538"
+                onclick="vote('SU26')"
+                />
+             <rect
+                style="fill:#6c535d;stroke-width:0.264583"
+                id="SU27"
+                width="7.3619971"
+                height="9.2706728"
+                x="112.57835"
+                y="206.09538"
+                onclick="vote('SU27')"
+                />
+             <rect
+                style="fill:#ffaacc;stroke-width:0.264583"
+                id="SU28"
+                width="6.8166642"
+                height="6.2713284"
+                x="112.57835"
+                y="193.00739"
+                onclick="vote('SU28')"
+                />
+             <rect
+                style="fill:#550044;stroke-width:0.264583"
+                id="SU29"
+                width="7.0893369"
+                height="6.8166623"
+                x="90.492348"
+                y="193.00739"
+                onclick="vote('SU29')"
+                />
+             <rect
+                style="fill:#d40055;stroke-width:0.264583"
+                id="SU30"
+                width="7.6346741"
+                height="8.9979916"
+                x="89.947006"
+                y="206.36804"
+                onclick="vote('SU30')"
+                />
+             <rect
+                style="fill:#4400aa;stroke-width:0.264583"
+                id="SU31"
+                width="7.3620019"
+                height="7.0893321"
+                x="47.68367"
+                y="192.46205"
+                onclick="vote('SU31')"
+                />
+             <rect
+                style="fill:#9955ff;stroke-width:0.264583"
+                id="SU32"
+                width="6.5440025"
+                height="8.9980049"
+                x="47.68367"
+                y="206.09538"
+                onclick="vote('SU32')"
+                />
+             <rect
+                style="fill:#165044;stroke-width:0.264583"
+                id="SU33"
+                width="7.6346684"
+                height="8.725337"
+                x="24.779667"
+                y="206.36806"
+                onclick="vote('SU33')"
+                />
+             <rect
+                style="fill:#00d4aa;stroke-width:0.264583"
+                id="SU34"
+                width="8.1800013"
+                height="7.634666"
+                x="24.234333"
+                y="192.46205"
+                onclick="vote('SU34')"
+                />
+           </g>
+         </svg>
+         
+      </div>
+   </div>
+    <script>
+      const makevisible = (house) => {
+         const houselist = ["testroom", "all", "hauptgebäude", "anbau", "mitteltrackt", "nawi", "verwaltung", "hauptoben", "nawioben", "verwaltungoben", "oberstufe", "zentral", "zentraloben", "KuBiz", "sporthalle"]
+     
+         for (let i = 0; i < houselist.length; i++) {
+             document.getElementById(houselist[i]).style.display = "none"
+         }
+     
+         document.getElementById(house).style.display = "block"
+     }
+     
+     makevisible("all")
+    </script>
+    <script>
+      const rooms = {
+         //Haubt Gebäude Unten
+         "HU1": 0,
+         "HU2": 0,
+         "HU3": 0,
+         "HU4": 0,
+         "HU5": 0,
+         "HU6": 0,
+         "HU7": 0,
+         "HU8": 0,
+         "HU9": 0,
+         "HU10": 0,
+         "HU11": 0,
+         "HU12": 0,
+         "HU13": 0,
+         "HU14": 0,
+         "HU15": 0,
+         "HU16": 0,
+         "HU17": 0,
+         //Anbau
+         "AU1": 0,
+         "AU2": 0,
+         "AU3": 0,
+         "AU4": 0,
+         //Mitteltrackt (Unten)
+         "MU1": 0,
+         "MU2": 0,
+         "MU3": 0,
+         "MU4": 0,
+         "MU5": 0,
+         "MU6": 0,
+         "MU7": 0,
+         "MU8": 0,
+         "MU9": 0,
+         //nawi unten
+         "NU1": 0,
+         "NU2": 0,
+         "NU3": 0,
+         "NU4": 0,
+         "NU5": 0,
+         "NU6": 0,
+         "NU7": 0,
+         "NU8": 0,
+         //Verwalung unten
+         "VU1": 0,
+         "VU2": 0,
+         "VU3": 0,
+         "VU4": 0,
+         "VU5": 0,
+         "VU6": 0,
+         "VU7": 0,
+         "VU8": 0,
+         "VU9": 0,
+         "VU10": 0,
+         "VU11": 0,
+         //Haubtgebäude Oben
+         "HO1": 0,
+         "HO2": 0,
+         "HO3": 0,
+         "HO4": 0,
+         "HO5": 0,
+         "HO6": 0,
+         "HO7": 0,
+         "HO8": 0,
+         "HO9": 0,
+         "HO10": 0,
+         "HO11": 0,
+         "HO12": 0,
+         "HO13": 0,
+         "HO14": 0,
+         "HO15": 0,
+         "HO16": 0,
+         "HO17": 0,
+         //nawi oben
+         "NO1": 0,
+         "NO2": 0,
+         "NO3": 0,
+         "NO4": 0,
+         "NO5": 0,
+         "NO6": 0,
+         "NO7": 0,
+         //verwaltung oben
+         "VO1": 0,
+         "VO2": 0,
+         "VO3": 0,
+         "VO4": 0,
+         "VO5": 0,
+         "VO6": 0,
+         "VO7": 0,
+         "VO8": 0,
+         "VO9": 0,
+         "VO10": 0,
+         "VO11": 0,
+         "VO12": 0,
+         "VO13": 0,
+         "VO14": 0,
+         //Zentral Gebäude unten
+         "ZU1": 0,
+         "ZU2": 0,
+         "ZU3": 0,
+         "ZU4": 0,
+         "ZU5": 0,
+         "ZU6": 0,
+         "ZU7": 0,
+         "ZU8": 0,
+         "ZU9": 0,
+         "ZU10": 0,
+         "ZU11": 0,
+         "ZU12": 0,
+         "ZU13": 0,
+         "ZU14": 0,
+         "ZU15": 0,
+         "ZU16": 0,
+         "ZU17": 0,
+         "ZU18": 0,
+         "ZU19": 0,
+         "ZU20": 0,
+         "ZU21": 0,
+         "ZU22": 0,
+         "ZU23": 0,
+         "ZU24": 0,
+         "ZU25": 0,
+         "ZU26": 0,
+         "ZU27": 0,
+         "ZU28": 0,
+         "ZU29": 0,
+         "ZU30": 0,
+         "ZU31": 0,
+         "ZU32": 0,
+         //Zentral oben
+         "ZO1": 0,
+         "ZO2": 0,
+         "ZO3": 0,
+         "ZO4": 0,
+         "ZO5": 0,
+         "ZO6": 0,
+         "ZO7": 0,
+         "ZO8": 0,
+         "ZO9": 0,
+         "ZO10": 0,
+         "ZO11": 0,
+         "ZO12": 0,
+         "ZO13": 0,
+         "ZO14": 0,
+         "ZO15": 0,
+         "ZO16": 0,
+         "ZO17": 0,
+         "ZO18": 0,
+         "ZO19": 0,
+         "ZO20": 0,
+         //KUBiz
+         "KU1": 0,
+         "KU2": 0,
+         "KU3": 0,
+         "KU4": 0,
+         "KU5": 0,
+         "KU6": 0,
+         "KU7": 0,
+         "KU8": 0,
+         "KU9": 0,
+         "KU10": 0,
+         "KU11": 0,
+         "KU12": 0,
+         "KU13": 0,
+         "KU14": 0,
+         "KU15": 0,
+         "KU16": 0,
+         //Sport Halle
+         "SU1": 0,
+         "SU2": 0,
+         "SU3": 0,
+         "SU4": 0,
+         "SU5": 0,
+         "SU6": 0,
+         "SU7": 0,
+         "SU8": 0,
+         "SU9": 0,
+         "SU10": 0,
+         "SU11": 0,
+         "SU12": 0,
+         "SU13": 0,
+         "SU14": 0,
+         "SU15": 0,
+         "SU16": 0,
+         "SU17": 0,
+         "SU18": 0,
+         "SU19": 0,
+         "SU20": 0,
+         "SU21": 0,
+         "SU22": 0,
+         "SU23": 0,
+         "SU24": 0,
+         "SU25": 0,
+         "SU26": 0,
+         "SU27": 0,
+         "SU28": 0,
+         "SU29": 0,
+         "SU30": 0,
+         "SU31": 0,
+         "SU32": 0,
+         "SU33": 0,
+         "SU34": 0,
+     }
+    </script>
+    <script>
+      const vote = (roomID) => {
+         if (document.getElementById('votetype1').checked) {
+             rooms[roomID] = 1
+             x = document.getElementById(roomID)
+             console.log(x)
+             x.classList.remove("red")
+             x.classList.add("green")
+     
+     
+         } else if (document.getElementById('votetype2').checked) {
+             rooms[roomID] = -1
+             x = document.getElementById(roomID)
+             x.classList.remove("green")
+             x.classList.add("red")
+     
+         } else {
+             rooms[roomID] = 0
+             x = document.getElementById(roomID)
+             x.classList.remove("red")
+             x.classList.remove("green")
+     
+     
+         }
+         console.log(rooms)
+     }
+    </script>
+    <script>
+        const redirect = () => {
+            const myJSON = JSON.stringify(rooms);
+            window.location.href = "http://127.0.0.1:5000/finish/" + myJSON;
+        }
+    </script>
+</body>
+</html>
